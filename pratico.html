@@ -13,78 +13,87 @@
     <header>
         <nav>
             <img src="https://image.flaticon.com/icons/svg/2633/2633848.svg" alt="cadastro">
-            <ul>
-                <a href=""></a>
-            </ul>
         </nav>
     </header>
     <main>
-        <form id="dados">
-            <p>DADOS PESSOAIS</p>
-            <label for="nfunc">NOME DO FUNCIONÁRIO:</label>
-            <input id="nfunc" type="text" name="nfunc" placeholder="Nome Completo...">
-            <br>
-            <br>
-            <label for="cpf">CPF:</label>
-            <input id="cpf" type="text" name="cpf">
+        <form>
+            <fieldset>
+                <p>DADOS PESSOAIS</p>
+                <label for="nfunc">NOME DO FUNCIONÁRIO:</label>
+                <input id="nfunc" type="text" name="nfunc" placeholder="Nome Completo..." required>
+                <br>
+                <br>
+                <label for="cpf">CPF:</label>
+                <input id="cpf" type="text" name="cpf" required oninput=fcpf(this) minlength="14" maxlength="14">
 
-            <label for="rg">RG:</label>
-            <input id="rg" type="text" name="rg">
-            <br>
-            <br>
-            <label for="dnasc">DATA DE NASCIMENTO:</label>
-            <input id="dnasc" type="date" name="dnasc">
+                <label for="rg">RG:</label>
+                <input id="rg" type="text" name="rg" required oninput=frg(this) minlength="12" maxlength="12">
+                <br>
+                <br>
+                <label for="dnasc">DATA DE NASCIMENTO:</label>
+                <input id="dnasc" type="date" name="dnasc" required>
 
-            <label for="ecivil">ESTADO CIVIL:
-                <select name="ecivil" id="ecivil">
-                    <optgroup label="ecivil" id="ecivil">
-                        <option value="casado">Casado(a)</option>
-                        <option value="solteiro">Solteiro(a)</option>
-                        <option value="divorciado">Divorciado(a)</option>
-                        <option value="outros">Outros</option>
-                    </optgroup>
-                </select>
-            </label>
+                <label for="ecivil">ESTADO CIVIL:
+                    <select name="ecivil" id="ecivil">
+                        <optgroup label="ecivil" id="ecivil">
+                            <option value="casado">Casado(a)</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="outros">Outros</option>
+                        </optgroup>
+                    </select>
+                </label>
 
-            <label for="cnh">CNH:
-                <select name="cnh" id="cnh">
-                    <optgroup label="cnh" id="cnh">
-                        <option value="a">A</option>
-                        <option value="b">B</option>
-                        <option value="ab">A/B</option>
-                        <option value="c">C</option>
-                    </optgroup>
-                </select>
-            </label>
+                <label for="cnh">CNH:
+                    <select name="cnh" id="cnh">
+                        <optgroup label="cnh" id="cnh">
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="ab">A/B</option>
+                            <option value="np">Não Possui</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset id="fs2">
+                <p>ENDEREÇO</p>
+                <label for="rua">RUA:</label>
+                <input id="rua" type="text" name="rua" required>
+
+                <label for="num">NÚMERO:</label>
+                <input id="num" type="number" name="num" required>
+                <br>
+                <br>
+                <label for="cep">CEP:</label>
+                <input id="cep" type="text" name="cep" required oninput=fcep(this) minlength="9" maxlength="9">
+
+                <label for="compl">COMPLEMENTO:</label>
+                <input id="compl" type="text" name="compl">
+                <br>
+                <br>
+                <label for="bairro">BAIRRO:</label>
+                <input id="bairro" type="text" name="bairro" required>
+
+                <label for="cid">CIDADE:</label>
+                <input id="cid" type="text" name="cid" required>
+
+                <label for="est">ESTADO:</label>
+                <input id="est" type="text" name="est" required>
+                <br>
+                <br>
+
+                <fieldset id="fs3">
+                    <button>
+                        Salvar
+                    </button>
+                </fieldset>
+            </fieldset>
         </form>
-
-        <form id="endereco">
-            <p>ENDEREÇO</p>
-            <label for="ruai">RUA:</label>
-            <input id="ruai" type="text" name="rua">
-
-            <label for="num">NÚMERO:</label>
-            <input id="num" type="number" name="num">
-            <br>
-            <br>
-            <label for="cep">CEP:</label>
-            <input id="cep" type="text" name="cep">
-
-            <label for="compl">COMPLEMENTO:</label>
-            <input id="compl" type="text" name="compl">
-            <br>
-            <br>
-            <label for="bairro">BAIRRO:</label>
-            <input id="bairro" type="text" name="bairro">
-
-            <label for="cid">CIDADE:</label>
-            <input id="cid" type="text" name="cid">
-
-            <label for="est">ESTADO:</label>
-            <input id="est" type="text" name="est">
-        </form>
+    </main>
+    <script src="script.js"></script>
 </body>
 
-</main>
+
 
 </html>
