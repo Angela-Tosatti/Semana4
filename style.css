@@ -2,79 +2,78 @@
     font-size: 1em;
 }
 
-form{
+form {
     border: solid 3px black;
     padding: 10px 5px;
     background-color: rgba(166, 171, 243, 0.842);
     margin: 15px;
 }
 
-#fs3{
-text-align: center;
-width: 10vw;
-margin: 0 auto 0 auto;
+#fs3 {
+    text-align: center;
+    width: 10vw;
+    margin: 0 auto 0 auto;
 }
 
-#fs3 button{
-width: 100%;
-height: 100%;
-margin-top: 2px;
-border-radius: 8px;
+#fs3 button {
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+    border-radius: 8px;
 }
 
-input{
+input {
     border-radius: 5px;
 }
 
 
-header{
+header {
     background-color: rgba(166, 171, 243, 0.842);
     margin: 15px;
     border: solid 3px black;
     padding: 0px 0px;
 }
 
-header img{
+header img {
     height: 10vh;
     width: 8vw;
 }
 
-p{
+p {
     text-align: center;
     font: normal 15pt arial;
     font: bold;
 }
 
-body{
+body {
     background-color: rgb(32, 6, 182);
 }
 
-#rua{
+#rua {
     width: 60%;
 }
 
-#nfunc{
+#nfunc {
     width: 60%;
 }
 
-#cpf{
+#cpf {
     width: 20%;
 }
 
-#rg{
+#rg {
     width: 20%;
 }
 
-#compl{
+#compl {
     width: 30%;
     border: none;
 }
 
-input:invalid{
+input:invalid {
     border: 1px solid red;
 }
 
-input:valid{
+input:valid {
     border: 1px solid rgb(117, 241, 127);
 }
-

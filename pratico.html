@@ -16,7 +16,7 @@
         </nav>
     </header>
     <main>
-        <form>
+        <form id="formulario">
             <fieldset>
                 <p>DADOS PESSOAIS</p>
                 <label for="nfunc">NOME DO FUNCIONÁRIO:</label>
@@ -58,6 +58,10 @@
 
             <fieldset id="fs2">
                 <p>ENDEREÇO</p>
+                <label for="cep">CEP:</label>
+                <input id="cep" type="text" required oninput=fcep(this) minlength="9" maxlength="9">
+                <br>
+                <br>
                 <label for="rua">RUA:</label>
                 <input id="rua" type="text" name="rua" required>
 
@@ -65,26 +69,21 @@
                 <input id="num" type="number" name="num" required>
                 <br>
                 <br>
-                <label for="cep">CEP:</label>
-                <input id="cep" type="text" name="cep" required oninput=fcep(this) minlength="9" maxlength="9">
-
-                <label for="compl">COMPLEMENTO:</label>
-                <input id="compl" type="text" name="compl">
-                <br>
-                <br>
                 <label for="bairro">BAIRRO:</label>
-                <input id="bairro" type="text" name="bairro" required>
+                <input id="bairro" type="text" required>
 
                 <label for="cid">CIDADE:</label>
-                <input id="cid" type="text" name="cid" required>
+                <input id="cid" type="text" required>
 
                 <label for="est">ESTADO:</label>
-                <input id="est" type="text" name="est" required>
+                <input id="est" type="text" required>
                 <br>
                 <br>
+                <label for="compl">COMPLEMENTO:</label>
+                <input id="compl" type="text">
 
                 <fieldset id="fs3">
-                    <button>
+                    <button id="salvar">
                         Salvar
                     </button>
                 </fieldset>
